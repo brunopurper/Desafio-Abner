@@ -5,22 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-  <style>
-    .banner-image {
-      background-image: url(/images/carrousel/exercícios-para-corredores.webp);
-      background-size: cover;
-    }
-    .tranparency {
-        min-height: 100vh;
-        width: 100%;
-        top: -56px;
-        position: relative;
-        z-index: -1;
-        margin: 0;
-        padding: 0;
-    }
-
-  </style>
+  <link rel="stylesheet" href="/style/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Jaro:opsz@6..72&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
 </head>
 <body>
   <ul class="nav justify-content-center bg-dark">
@@ -41,52 +29,60 @@
 
   </ul>
   <!-- Navbar  -->
+   <div>
   <nav class="navbar navbar-transparent navbar-expand-lg navbar-dark px-3 " >
-    <div class="container">
-      <a class="navbar-brand position-absolute" href="#">Abner Fonseca</a>
-      <button
-        class="navbar-toggler"
-        type="button"
-        data-bs-toggle="collapse"
-        data-bs-target="#navbarNav"
-        aria-controls="navbarNav"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-      >
+    <div class="container d-flex justify-content-between ">
+      <a class="navbar-brand" href="#">Abner Fonseca</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <div class="mx-auto"></div>
-        <ul class="navbar-nav">
-          <li class="nav-item">
-            <a class="nav-link text-white" href="#">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link text-white" href="#">About</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link text-white" href="#">Blog</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link text-white" href="#">Pricing</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link text-white" href="#">Contact</a>
-          </li>
-        </ul>
+      <div class="offcanvas offcanvas-end" style="background-color: grey;" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Offcanvas</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Dropdown
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
       </div>
     </div>
   </nav>
+
 
   <!-- Banner Image  -->
   <div id="carouselExampleAutoplaying" class="carousel slide " data-bs-ride="carousel">
     <div class="carousel-inner tranparency">
       <div class="carousel-item active">
-        <img src="/images/carrousel/exercícios-para-corredores.webp" class="d-block w-100" alt="...">
+        <figcaption>Bem-vindo à Jesus Coin</figcaption>
+        <img src="/images/carrousel/1.png" class="d-block w-100" alt="...">
       </div>
       <div class="carousel-item">
-        <img src="/images/carrousel/massagem-corredores.jpg" class="d-block w-100" alt="...">
+        <figcaption>Transações seguras e transparentes</figcaption>
+        <img src="/images/carrousel/2.png" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <figcaption>Jesus Coin traz paz para sua carteira</figcaption>
+        <img src="/images/carrousel/3.png" class="d-block w-100" alt="...">
       </div>
 
     </div>
@@ -100,49 +96,30 @@
     </button>
   </div>
 
-  <!-- Main Content Area -->
-  <div class="container my-5 d-grid gap-5">
-    <div class="p-5 border">
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-        Necessitatibus veniam ipsa earum quibusdam, atque ipsum error maiores
-        natus iusto fugit id saepe neque rerum magni laudantium accusantium
-        dolorem numquam quasi.
-      </p>
+  <div class="container d-flex justify-content-center align-items-center break">
+    <div class="card" style="width: 18rem; border: none;">
+      <img src="..." class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Valores</h5>
+        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+      </div>
     </div>
-    <div class="p-5 border">
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-        Necessitatibus veniam ipsa earum quibusdam, atque ipsum error maiores
-        natus iusto fugit id saepe neque rerum magni laudantium accusantium
-        dolorem numquam quasi.
-      </p>
+    <div class="card " style="width: 18rem; border: none;">
+      <img src="..." class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Missão</h5>
+        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+      </div>
     </div>
-    <div class="p-5 border">
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-        Necessitatibus veniam ipsa earum quibusdam, atque ipsum error maiores
-        natus iusto fugit id saepe neque rerum magni laudantium accusantium
-        dolorem numquam quasi.
-      </p>
+    <div class="card " style="width: 18rem; border: none;">
+      <img src="..." class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Visão</h5>
+        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+      </div>
     </div>
-    <div class="p-5 border">
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-        Necessitatibus veniam ipsa earum quibusdam, atque ipsum error maiores
-        natus iusto fugit id saepe neque rerum magni laudantium accusantium
-        dolorem numquam quasi.
-      </p>
     </div>
-    <div class="p-5 border">
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-        Necessitatibus veniam ipsa earum quibusdam, atque ipsum error maiores
-        natus iusto fugit id saepe neque rerum magni laudantium accusantium
-        dolorem numquam quasi. df
-      </p>
-    </div>
-  </div>
+
   <script src="https://kit.fontawesome.com/d9fc5e11d2.js" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
