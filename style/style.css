@@ -2,8 +2,6 @@
 .tranparency {
     min-height: 100vh;
     width: 100%;
-    top: -56px;
-    position: relative;
     z-index: -1;
     margin: 0;
     padding: 0;
@@ -43,4 +41,50 @@ figcaption {
   height: 100%;
   z-index: 1000;
   background-color: white;
+}
+
+.nav-link:hover {
+  transition: transform, 1s;
+  transform: scale(1.1);
+}
+
+.nav-link{
+  transition: transform, 1s;
+  transform: scale(1);
+}
+
+.navbar {
+  z-index: 3;
+  position: absolute;
+  width: 100%;
+  li {
+    font-family: "Roboto", sans-serif;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+  }
+}
+
+.jesuscoin:hover {
+  transition: transform, 1s;
+  transform: scale(1.1);
+}
+
+.jesuscoin {
+  width: 200px;
+  transition: transform, 1s;
+  transform: scale(1);
+  @media (width: 326px) {
+      width: 150;
+
+   }
+}
+
+
+
+.evencards {
+
+}
+
+body {
+  background-color: ghostwhite;
 }
