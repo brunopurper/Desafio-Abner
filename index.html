@@ -271,7 +271,28 @@
           <label for="exampleFormControlTextarea1" class="form-label"></label>
           <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Sua pergunta ou sugestão"></textarea>
         </div>
-        <button type="button" class="btn btn-primary col-12">Enviar</button>
+        <!-- Button trigger modal -->
+<button type="button" class="btn btn-primary col-12" data-bs-toggle="modal" data-bs-target="#exampleModal">
+  Enviar
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Formulário Enviado!</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        Nós vamos entrar em contato com você em breve! Fique de olho no seu email e telefone, logo um de nossos funcionários vai atende-lo!
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Ok</button>
+      </div>
+    </div>
+  </div>
+</div>
 
       </div>
       <div style="width: 50%;">
